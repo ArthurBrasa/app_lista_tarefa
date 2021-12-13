@@ -2,7 +2,11 @@
 	
 	class Tarefa {
 		private $tarefa;
-	
+
+		public function __construct($tarefa)
+		{
+			$this->tarefa = $tarefa;
+		}	
 
 		public function __set($att, $value) {
 			$this->$att = $value;

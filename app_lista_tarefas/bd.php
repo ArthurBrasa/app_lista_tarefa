@@ -22,6 +22,7 @@
 				// code...
 				$connection = new PDO($this->dns, $this->root, $this->pass);
 				return $connection;
+
 			}
 			catch(PDOException $e)
 			{
